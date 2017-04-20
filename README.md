@@ -1,4 +1,4 @@
-Wax
+Wax [![Build Status](https://travis-ci.org/Zayyy01/wax.svg?branch=master)](https://travis-ci.org/Zayyy01/wax)
 ===
 
 Wax grew out of my frustration with Linq-to-SQL's inability to
