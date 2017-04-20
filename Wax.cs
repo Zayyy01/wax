@@ -1,10 +1,10 @@
-namespace ExpressionKit.Unwrap
-{
-  using System;
-  using System.Linq;
-  using System.Linq.Expressions;
+using System;
+using System.Linq;
+using System.Linq.Expressions;
 
-  /// <summary>
+namespace Wax
+{
+    /// <summary>
   /// Extensions for runtime expansion of expressions.
   /// </summary>
   public static class Wax

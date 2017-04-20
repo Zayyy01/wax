@@ -1,10 +1,8 @@
-﻿namespace ExpressionKit.Unwrap
-{
-  using System;
-  using System.Linq.Expressions;
-  using System.Reflection;
+﻿using System.Linq.Expressions;
 
-  /// <summary>
+namespace Wax
+{
+    /// <summary>
   /// An expression visitor that inverts all
   /// logic in an expression tree.
   /// </summary>
@@ -21,13 +19,13 @@
       {
         case ExpressionType.AndAlso:
           return Expression.OrElse(
-            this.Visit(b.Left),
-            this.Visit(b.Right));
+            Visit(b.Left),
+            Visit(b.Right));
 
         case ExpressionType.OrElse:
           return Expression.AndAlso(
-            this.Visit(b.Left),
-            this.Visit(b.Right));
+            Visit(b.Left),
+            Visit(b.Right));
 
         case ExpressionType.Equal:
           return Expression.NotEqual(

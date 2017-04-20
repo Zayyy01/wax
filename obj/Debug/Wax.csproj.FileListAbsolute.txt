@@ -1,0 +1,7 @@
+C:\Users\Zozo\Source\Repos\wax\obj\Debug\Wax.csprojResolveAssemblyReference.cache
+C:\Users\Zozo\Source\Repos\wax\bin\Debug\ClassLibrary.dll
+C:\Users\Zozo\Source\Repos\wax\bin\Debug\ClassLibrary.pdb
+C:\Users\Zozo\Source\Repos\wax\bin\Debug\ClassLibrary.dll.CodeAnalysisLog.xml
+C:\Users\Zozo\Source\Repos\wax\bin\Debug\ClassLibrary.dll.lastcodeanalysissucceeded
+C:\Users\Zozo\Source\Repos\wax\obj\Debug\ClassLibrary.dll
+C:\Users\Zozo\Source\Repos\wax\obj\Debug\ClassLibrary.pdb

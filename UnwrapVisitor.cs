@@ -1,22 +1,22 @@
-namespace ExpressionKit.Unwrap
-{
-  using System;
-  using System.Collections.Generic;
-  using System.Linq;
-  using System.Linq.Expressions;
-  using System.Reflection;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
 
-  /// <summary>
+namespace Wax
+{
+    /// <summary>
   /// Unwraps calls to <see cref="Wax.Expand{TParameter, TResult}(Expression{Func{TParameter, TResult}}, TParameter)"/>
   /// into the definition of the expression they call.
   /// </summary>
   internal class UnwrapVisitor : ExpressionVisitor
   {
-    private static Type DeclaringType = typeof(Wax);
+    private static readonly Type DeclaringType = typeof(Wax);
 
-    private static Type UnwrappableType = typeof(UnwrappableMethodAttribute);
+    private static readonly Type UnwrappableType = typeof(UnwrappableMethodAttribute);
 
-    private static Type ConstantValueType = typeof(ConstantValueMethodAttribute);
+    private static readonly Type ConstantValueType = typeof(ConstantValueMethodAttribute);
 
     private static bool MethodIsThunk(MethodInfo method)
     {
@@ -35,7 +35,7 @@ namespace ExpressionKit.Unwrap
     }
 
     // A dictionary of parameters to replace.
-    private Dictionary<ParameterExpression, Expression> Replacements;
+    private readonly Dictionary<ParameterExpression, Expression> _replacements;
 
     /// <summary>
     /// Unwraps calls to unwrappable methods
@@ -43,19 +43,19 @@ namespace ExpressionKit.Unwrap
     /// </summary>
     internal UnwrapVisitor()
     {
-      this.Replacements = new Dictionary<ParameterExpression, Expression>();
+      _replacements = new Dictionary<ParameterExpression, Expression>();
     }
 
     private UnwrapVisitor(Dictionary<ParameterExpression, Expression> replacements)
     {
-      this.Replacements = replacements;
+      _replacements = replacements;
     }
 
     // Replace a parameter if it's in our dictionary of replacements
     protected override Expression VisitParameter(ParameterExpression node)
     {
-      if (this.Replacements.ContainsKey(node))
-        return this.Replacements[node];
+      if (_replacements.ContainsKey(node))
+        return _replacements[node];
       else
         return base.VisitParameter(node);
     }
@@ -101,10 +101,7 @@ namespace ExpressionKit.Unwrap
           }
 
           throw new InvalidOperationException(
-            string.Format(
-              "Can't work with expression {0} of type {1}.",
-              e,
-              e.GetType()));
+              $"Can't work with expression {e} of type {e.GetType()}.");
         }
       }
 
@@ -121,7 +118,8 @@ namespace ExpressionKit.Unwrap
       }
       else
       {
-        lambda = field.GetValue(constant) as LambdaExpression;
+          if (field != null) lambda = field.GetValue(constant) as LambdaExpression;
+          else lambda = null;
       }
 
       if (lambda == null)
@@ -137,7 +135,7 @@ namespace ExpressionKit.Unwrap
       for (var i = 0; i < lambda.Parameters.Count; i++)
       {
         // Recursively unwrap the entire tree.
-        var replacement = this.Visit(node.Arguments[i + 1]);
+        var replacement = Visit(node.Arguments[i + 1]);
 
         replacements.Add(lambda.Parameters[i], replacement);
       }
@@ -157,12 +155,12 @@ namespace ExpressionKit.Unwrap
     {
       if (MethodIsUnwrappable(node.Method))
       {
-        return this.Unwrap(node);
+        return Unwrap(node);
       }
 
       if (MethodIsThunk(node.Method))
       {
-        return this.Unthunk(node);
+        return Unthunk(node);
       }
 
       return base.VisitMethodCall(node);

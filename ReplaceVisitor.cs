@@ -1,12 +1,8 @@
-﻿namespace ExpressionKit.Unwrap
-{
-  using System;
-  using System.Collections.Generic;
-  using System.Linq;
-  using System.Linq.Expressions;
-  using System.Web;
+﻿using System.Linq.Expressions;
 
-  /// <summary>
+namespace Wax
+{
+    /// <summary>
   /// An expression visitor that acts as a simple find
   /// and replace.
   /// </summary>
@@ -15,12 +11,12 @@
     /// <summary>
     /// The expression to find.
     /// </summary>
-    private readonly Expression Source;
+    private readonly Expression _source;
 
     /// <summary>
     /// The replacement expression.
     /// </summary>
-    private readonly Expression Replacement;
+    private readonly Expression _replacement;
 
     /// <summary>
     /// Create a new replacement visitor.
@@ -33,13 +29,13 @@
     /// </param>
     public ReplaceVisitor(Expression source, Expression replacement)
     {
-      this.Source = source;
-      this.Replacement = replacement;
+      _source = source;
+      _replacement = replacement;
     }
 
     public override Expression Visit(Expression node)
     {
-      if (this.Source == node) return this.Replacement;
+      if (_source == node) return _replacement;
 
       return base.Visit(node);
     }
