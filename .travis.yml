@@ -2,10 +2,10 @@
 language: csharp
 solution: Wax.sln
 
-before_install:
-  - sudo apt-get install nunit-console
-before_script:
+install:
   - nuget restore Wax.sln
-after_script:
-  - nunit-console test/WaxTest.dll
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release Wax.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./WaxTest/bin/WaxTest.dll
 
