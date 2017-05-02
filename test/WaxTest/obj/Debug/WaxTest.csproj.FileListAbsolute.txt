@@ -1,0 +1,6 @@
+D:\BViki\Documents\Egyetem\wax-master\test\WaxTest\bin\Debug\WaxTest.dll
+D:\BViki\Documents\Egyetem\wax-master\test\WaxTest\bin\Debug\WaxTest.pdb
+D:\BViki\Documents\Egyetem\wax-master\test\WaxTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\BViki\Documents\Egyetem\wax-master\test\WaxTest\obj\Debug\WaxTest.csprojResolveAssemblyReference.cache
+D:\BViki\Documents\Egyetem\wax-master\test\WaxTest\obj\Debug\WaxTest.dll
+D:\BViki\Documents\Egyetem\wax-master\test\WaxTest\obj\Debug\WaxTest.pdb
