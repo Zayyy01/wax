@@ -8,3 +8,9 @@ C:\Users\Attila\Desktop\New folder (7)\wax-master\NUnit.Tests1\obj\Debug\NUnit.T
 C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\obj\Debug\NUnit.Tests1.csprojResolveAssemblyReference.cache
 C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\obj\Debug\NUnit.Tests1.dll
 C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\obj\Debug\NUnit.Tests1.pdb
+C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\bin\Debug\NUnit.Tests1.dll
+C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\bin\Debug\NUnit.Tests1.pdb
+C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\bin\Debug\ClassLibrary.dll
+C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\bin\Debug\nunit.framework.dll
+C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\bin\Debug\ClassLibrary.pdb
+C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\bin\Debug\nunit.framework.xml

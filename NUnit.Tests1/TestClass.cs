@@ -13,16 +13,16 @@ namespace NUnit.Tests1
     public class TestClass
     {
         [Test]
-        public void TestMethod()
+        public void TestMethod1()
         {
-            // TODO: Add your test code here
+
             Expression<Func<int, int>> Square = x => x * x;
             Expression<Func<int, int>> SquSquare = Wax.Wax.Unwrap<int, int>(
                 x => Square.Expand(Square.Expand(x)));
-
             Expression<Func<int, int>> Square2 = x => ((x * x) * (x * x));
-
-            Assert.IsTrue(Expression.Equals(SquSquare, Square2));
+            string s1 = Square2.ToString();
+            string s2 = SquSquare.ToString();
+            Assert.IsTrue(Expression.Equals(s1, s2));
         }
     }
 }
