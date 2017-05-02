@@ -11,7 +11,7 @@ namespace UnitTests
 		[Test]
 		public void test1 ()
 		{
-			
+			Assert.IsTrue (true);
 		}
     
 	}
