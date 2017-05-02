@@ -3,3 +3,8 @@ C:\Users\Attila\Documents\GitHub\wax\WaxTest\bin\Debug\WaxTest.pdb
 C:\Users\Attila\Documents\GitHub\wax\WaxTest\obj\Debug\WaxTest.csprojResolveAssemblyReference.cache
 C:\Users\Attila\Documents\GitHub\wax\WaxTest\obj\Debug\WaxTest.dll
 C:\Users\Attila\Documents\GitHub\wax\WaxTest\obj\Debug\WaxTest.pdb
+C:\Users\Attila\Desktop\New folder (5)\wax-master\WaxTest\bin\Debug\WaxTest.dll
+C:\Users\Attila\Desktop\New folder (5)\wax-master\WaxTest\bin\Debug\WaxTest.pdb
+C:\Users\Attila\Desktop\New folder (5)\wax-master\WaxTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Attila\Desktop\New folder (5)\wax-master\WaxTest\obj\Debug\WaxTest.dll
+C:\Users\Attila\Desktop\New folder (5)\wax-master\WaxTest\obj\Debug\WaxTest.pdb

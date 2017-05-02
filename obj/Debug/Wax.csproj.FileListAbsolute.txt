@@ -1,0 +1,4 @@
+C:\Users\Attila\Desktop\New folder (5)\wax-master\bin\Debug\ClassLibrary.dll
+C:\Users\Attila\Desktop\New folder (5)\wax-master\bin\Debug\ClassLibrary.pdb
+C:\Users\Attila\Desktop\New folder (5)\wax-master\obj\Debug\ClassLibrary.dll
+C:\Users\Attila\Desktop\New folder (5)\wax-master\obj\Debug\ClassLibrary.pdb
