@@ -7,5 +7,5 @@ before_install:
 before_script:
   - nuget restore Wax.sln
 after_script:
-  - nunit-console test/WaxTest.cs
+  - nunit-console test/WaxTest.dll
 
