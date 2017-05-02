@@ -52,6 +52,7 @@
     <Compile Include="UnwrappableMethod.cs" />
     <Compile Include="UnwrapVisitor.cs" />
     <Compile Include="Wax.cs" />
+    <Compile Include="test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
