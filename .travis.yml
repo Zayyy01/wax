@@ -7,6 +7,6 @@ before_install:
 before_script:
   - nuget restore Wax.sln
 after_script:
-  - nunit-console /release/test/WaxTest/UnitTest1.dll
+  - nunit-console /home/travis/build/Zayyy01/wax/NUnit.Tests1/bin/Release/NUnit.Tests1.dll
   
 
