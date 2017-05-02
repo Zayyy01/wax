@@ -2,8 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using Wax;
 
 namespace NUnit.Tests1
 {
@@ -14,7 +16,13 @@ namespace NUnit.Tests1
         public void TestMethod()
         {
             // TODO: Add your test code here
-            Assert.Pass("Your first passing test");
+            Expression<Func<int, int>> Square = x => x * x;
+            Expression<Func<int, int>> SquSquare = Wax.Wax.Unwrap<int, int>(
+                x => Square.Expand(Square.Expand(x)));
+
+            Expression<Func<int, int>> Square2 = x => ((x * x) * (x * x));
+
+            Assert.IsTrue(Expression.Equals(SquSquare, Square2));
         }
     }
 }
