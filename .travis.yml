@@ -1,3 +1,11 @@
 
 language: csharp
 solution: Wax.sln
+
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore Wax.sln
+after_script:
+  - nunit-console test/WaxTest.cs
+
