@@ -5,14 +5,28 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Wax;
 using System.Collections;
+using System.Security.Cryptography.X509Certificates;
+using Wax;
 
 namespace NUnit.Tests1
 {
     [TestFixture]
     public class TestClass
     {
+        [Test]
+        public void ConstantTest()
+        {
+            try
+            {
+                int constant = Wax.Wax.Constant<int>(5);
+            }
+            catch (NotImplementedException e)
+            {
+                Assert.True(true);
+            }
+
+        }
         [Test]
         public void UnWrapOne()
         {

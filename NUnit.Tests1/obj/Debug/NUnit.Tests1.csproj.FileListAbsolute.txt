@@ -14,3 +14,12 @@ C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\bin\Debug\ClassLibrary.dll
 C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\bin\Debug\nunit.framework.dll
 C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\bin\Debug\ClassLibrary.pdb
 C:\Users\BViki\Desktop\iet\wax-master\NUnit.Tests1\bin\Debug\nunit.framework.xml
+C:\Users\Zozo\Source\Repos\wax\NUnit.Tests1\bin\Debug\NUnit.Tests1.dll
+C:\Users\Zozo\Source\Repos\wax\NUnit.Tests1\bin\Debug\NUnit.Tests1.pdb
+C:\Users\Zozo\Source\Repos\wax\NUnit.Tests1\bin\Debug\ClassLibrary.dll
+C:\Users\Zozo\Source\Repos\wax\NUnit.Tests1\bin\Debug\nunit.framework.dll
+C:\Users\Zozo\Source\Repos\wax\NUnit.Tests1\bin\Debug\ClassLibrary.pdb
+C:\Users\Zozo\Source\Repos\wax\NUnit.Tests1\bin\Debug\nunit.framework.xml
+C:\Users\Zozo\Source\Repos\wax\NUnit.Tests1\obj\Debug\NUnit.Tests1.csprojResolveAssemblyReference.cache
+C:\Users\Zozo\Source\Repos\wax\NUnit.Tests1\obj\Debug\NUnit.Tests1.dll
+C:\Users\Zozo\Source\Repos\wax\NUnit.Tests1\obj\Debug\NUnit.Tests1.pdb

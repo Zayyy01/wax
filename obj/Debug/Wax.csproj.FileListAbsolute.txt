@@ -13,3 +13,8 @@ C:\Users\BViki\Desktop\iet\wax-master\bin\Debug\ClassLibrary.pdb
 C:\Users\BViki\Desktop\iet\wax-master\obj\Debug\Wax.csprojResolveAssemblyReference.cache
 C:\Users\BViki\Desktop\iet\wax-master\obj\Debug\ClassLibrary.dll
 C:\Users\BViki\Desktop\iet\wax-master\obj\Debug\ClassLibrary.pdb
+C:\Users\Zozo\Source\Repos\wax\bin\Debug\ClassLibrary.dll
+C:\Users\Zozo\Source\Repos\wax\bin\Debug\ClassLibrary.pdb
+C:\Users\Zozo\Source\Repos\wax\obj\Debug\Wax.csprojResolveAssemblyReference.cache
+C:\Users\Zozo\Source\Repos\wax\obj\Debug\ClassLibrary.dll
+C:\Users\Zozo\Source\Repos\wax\obj\Debug\ClassLibrary.pdb
