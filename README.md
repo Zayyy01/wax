@@ -1,4 +1,4 @@
-Wax [![Build Status](https://travis-ci.org/Zayyy01/wax.svg?branch=master)](https://travis-ci.org/Zayyy01/wax)
+Wax [![Build Status](https://travis-ci.org/Zayyy01/wax.svg?branch=master)](https://travis-ci.org/Zayyy01/wax) [![Build status](https://ci.appveyor.com/api/projects/status/kc3ap567wlwm9gr5?svg=true)](https://ci.appveyor.com/project/Zayyy01/wax) [![Coverage Status](https://coveralls.io/repos/github/Zayyy01/wax/badge.svg?branch=install-appveyor)](https://coveralls.io/github/Zayyy01/wax?branch=install-appveyor)
 ===
 
 Wax grew out of my frustration with Linq-to-SQL's inability to
