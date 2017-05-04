@@ -1,3 +1,5 @@
+build:
+  project: Wax.sln
 environment:
   COVERALLS_REPO_TOKEN:
     secure: QXbLYR/Kj5kKbC1VfgWrownBEhUzuXYiTpNpx1hXsvAx8yYVZEYPqocUCtJFx0Ye
